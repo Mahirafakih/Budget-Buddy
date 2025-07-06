@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Staatliches&display=swap');
+
+:root{
+  --bright-pink:#ed6188;
+}
+.app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  body{
+    background-color: #111827;
+    color: aliceblue;
+     font-family: "Red Hat Display", sans-serif;
+  }
+  
+  .header {
+    font-family: "Staatliches", sans-serif;
+    text-align: center;
+    color:var(--bright-pink);
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 1.2px;
+  }
+  
+  h2{
+    color: #fbb6ce ;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+ 
+  .transaction-form-wrp{
+       position: absolute;
+    right: 2%;
+    width: 24%;
+    background-color: #212a38;
+    padding: 20px;
+    border-radius: 12px;
+  }
+    .chart-container {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .transaction-list li {
+    background: #1f2937;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  button{
+    cursor: pointer;
+    
+  }
+  label{
+    margin-bottom: 4px;
+  }
+
+  .deletebtn{
+      padding: 20px 15px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    background-color: #111827;
+    
+  }
+  .secondry-btn{
+    background-color: transparent;
+    border: 1px solid #576d8c;
+  }
+  .secondry-btn:hover{
+    border: 1px solid var(--bright-pink);
+  }
+  .deletebtn:hover{
+    color: var(--bright-pink);
+  }
+  .icon{
+    width: 14px;
+    height: auto;
+  }
+
+  .editbtn{
+    padding: 6px 12px;
+    font-size: 16px;
+   color: #fff;
+   background-color: transparent;
+    margin: 10px; 
+    border-bottom: 1px solid transparent;
+ } 
+ .editbtn:hover{
+    border-bottom: 1.4px solid var(--bright-pink);
+ }
+
+  .cancelbtn{
+    padding: 8px;
+    font-size: 13px;
+    background-color: rgb(4, 4, 21);
+    color: white;
+    border: none;
+  }
+  .summary-table{
+    background-color: #212a40;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    width: 100%;
+    
+  }
+  .summary-dashboard{
+    display: grid;
+    gap: 12px;
+  }
+
+  @media screen and (max-width:767px){
+    .transaction-form-wrp{
+        position: unset;
+        width: unset;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+.transaction-list li{
+    width: 100%;
+}
+.bar-chart{
+    width: 100%;
+}
+  }
